@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>SẢN PHẨM DEMO HỆ THỐNG BÁN HÀNG</title>
+</head>
+<body>
+    <div class="marter-wrapper-page">
+        <div class="marter-wrapper-content">
+            <div class="header">
+                <div class="header-logo">
+                    <a href="">
+                        <img title="" alt="Tricentis Demo Web Shop" src="https://demowebshop.tricentis.com/Themes/DefaultClean/Content/images/logo.png">
+                    </a>
+                </div>
+                <div class="header-search-box">
+                    <form action="/search" method="get" onsubmit="return check_small_search_form()" novalidate="novalidate">    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="search-box-text ui-autocomplete-input" id="small-searchterms" autocomplete="off" value="Search store" name="q">
+                        <input type="submit" class="button-1 search-box-button" value="Search">        
+                    </form>
+                </div>
+            </div>
+            <div class="header-menu">
+                <ul class="top-menu">
+                    <li><a href="">BOOKS</a></li>
+                    <li><a href="">COMPUTER</a></li>
+                    <li><a href="">ELECTRONICS</a></li>
+                    <li>
+                        <a href="">APPAREL&SHOES</a>
+                    </li>
+                    <li>
+                        <a href="">DIGITAL DOWLOADS</a>
+                    </li>
+                    <li>
+                        <a href="">JEWELRY</a>
+                    </li>
+                    <li>
+                        <a href="">GIFT CARDS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="master-wapper-main">
+                <div class="side2">
+                    <div class="block block-categories-nav">
+                        <div class="title">
+                            <span>CATEGORIES</span>
+                        </div>
+                        <div class="listbox">
+                            <ul class="list">
+                                <li>
+                                    <a href="">BOOKS</a>
+                                </li>
+                                <li>
+                                    <a href="">COMPUTER</a>
+                                </li>
+                                <li>
+                                    <a href="">ELECTRONICS</a>
+                                </li>
+                                <li>
+                                    <a href="">APPAREL&SHOES</a>
+                                </li>
+                                <li>
+                                    <a href="">DIGITAL DOWLOADS</a>
+                                </li>
+                                <li>
+                                    <a href="">JEWELRY</a>
+                                </li>
+                                <li>
+                                    <a href="">GIFT CARDS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block block-manufacture">
+                        <div class="title">
+                            <span>MANUFACTURERS</span>
+                        </div>
+                        <div class="listbox">
+                            <ul class="list">
+                                <li>
+                                    <a href="">Tricentis</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block block-newsletter">
+                        <div class="title">
+                            <span>NEWSLETTER</span>
+                        </div>
+                        <div class="listbox">
+                            <div id="newsletter-subscribe-block" class="newsletter-subscribe-block">
+                                <span>Sign up for our newsletter:</span>
+                                <div class="newsletter-email">
+                                <input id="newsletter-email" name="NewsletterEmail" type="text" value="">
+                                <span class="field-validation-valid" data-valmsg-for="NewsletterEmail" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="buttons">
+                                    <input type="button" value="Subscribe" id="newsletter-subscribe-button" class="button-1 newsletter-subscribe-button">
+                                    <span id="subscribe-loading-progress" style="display: none;" class="please-wait">Wait...</span>
+                                </div>
+                            </div>
+                            <div id="newsletter-result-block" class="newsletter-result-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-2">
+                <form action="/register" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="5vJxdIoxSXv4s9bPf7NVsNNxE_jRUe7P3QOl4A9UNAnWSmZsmeUQluwSS7VQlV2IcnyuuWzCykEXJctQVo6gbsoHQvHpVIIL_PYRd4yV5001">    <div class="page registration-page">
+                    <div class="page-title">
+                        <h1>Register</h1>
+                    </div>
+                    <div class="page-body">
+                        <div class="message-error">
+                            
+                        </div>
+                        
+            
+                        <div class="fieldset">
+                            <div class="title">
+                                <strong>Your Personal Details</strong>
+                            </div>
+                            <div class="form-fields">
+                                    <div class="inputs">
+                                        <label>Gender:</label>
+                                        <div class="gender">
+                                            <input id="gender-male" name="Gender" type="radio" value="M">
+                                            <label class="forcheckbox" for="gender-male">Male</label>
+                                        </div>
+                                        <div class="gender">
+                                            <input id="gender-female" name="Gender" type="radio" value="F">
+                                            <label class="forcheckbox" for="gender-female">Female</label>
+                                        </div>
+                                    </div>
+                                <div class="inputs">
+                                    <label for="FirstName">First name:</label>
+                                    <input class="text-box single-line" data-val="true" data-val-required="First name is required." id="FirstName" name="FirstName" type="text" value="">
+                                    <span class="required">*</span>
+                                    <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="inputs">
+                                    <label for="LastName">Last name:</label>
+                                    <input class="text-box single-line" data-val="true" data-val-required="Last name is required." id="LastName" name="LastName" type="text" value="">
+                                    <span class="required">*</span>
+                                    <span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="inputs">
+                                    <label for="Email">Email:</label>
+                                    <input class="text-box single-line" data-val="true" data-val-email="Wrong email" data-val-required="Email is required." id="Email" name="Email" type="text" value="">
+                                    <span class="required">*</span>
+                                    <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                                                                        <div class="fieldset">
+                            <div class="title">
+                                <strong>Your Password</strong>
+                            </div>
+                            <div class="form-fields">
+                                <div class="inputs">
+                                    <label for="Password">Password:</label>
+                                    <input class="text-box single-line password" data-val="true" data-val-length="The password should have at least 6 characters." data-val-length-max="999" data-val-length-min="6" data-val-required="Password is required." id="Password" name="Password" type="password" value="">
+                                    <span class="required">*</span>
+                                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="inputs">
+                                    <label for="ConfirmPassword">Confirm password:</label>
+                                    <input class="text-box single-line password" data-val="true" data-val-equalto="The password and confirmation password do not match." data-val-equalto-other="*.Password" data-val-required="Password is required." id="ConfirmPassword" name="ConfirmPassword" type="password" value="">
+                                    <span class="required">*</span>
+                                    <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" id="register-button" class="button-1 register-next-step-button" value="Register" name="register-button">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
